@@ -1,0 +1,143 @@
+body {
+  background-image: url('music.jpg');
+  text-align: center;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: black; 
+  color: silver;
+  height: 50px;
+  /* text-align: center; */
+  padding-top: 5px;
+  padding-bottom: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+#sun:hover {
+  color:hotpink;
+}
+
+#TMV:hover {
+  color:hotpink;
+}
+
+h1 {
+  font-family: 'Krona One', sans-serif;
+}
+
+h2 {
+  font-family: helvetica;
+}
+
+a {
+  text-decoration: none;
+  color: silver;
+}
+
+h3 a {
+  color: black;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+.typewriter {
+  letter-spacing: .15em;
+}
+
+.typewriter h1 {
+  /* margin: 0 auto; */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid orange;
+  animation: 
+  typing 2.5s steps(40, end),
+  blinking-cursor .5s step-end infinite;
+  display: flex;
+  width: 80vh;
+
+}
+
+div.disabled {
+  overflow-x: hidden;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80vh }
+}
+
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: orange } 
+}
+
+#albums {
+  display: block;
+  position: static;
+  margin-top: 10%;
+  border: 2px solid pink;
+  border-radius: 50px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  background-color: white;
+  color: black;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px #bababa;
+  border-radius: 50px;
+}
+
+#icon {
+  position: relative;
+  float: left;
+}
+
+#myClock {
+  font-size: 33px;
+  font-family: monospace;
+  padding-top: 35px;
+  color: silver;
+  animation:blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText{
+  0%{     color: silver ;    }
+  49%{    color: silver ; }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: silver;    }
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  padding: 20px;
+  height: 20px;
+  float: 
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  background: black;
+  color: silver;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
